@@ -1,0 +1,46 @@
+void advancePBar(Sequence* seq)
+{
+    SendMessage(hPBarSequence, PBM_SETPOS, 0, 0);//    On met a zéro la pbBar
+    if(GetMenuState(hMenuBar, ID_MENU_PBAR_ADVANCE_MODE,MF_BYCOMMAND) == MF_UNCHECKED)// On avance la PBAR en fonction du temp
+    {
+        ///     EN FONCTION DU TEMPS
+        int totalTime(0);
+        for(int i(0); i < seq->size(); i++)// On récupère le temps total de la séquence
+            totalTime += seq->getTime(i);
+        SendMessage(hPBarSequence, PBM_SETRANGE, 0, MAKELPARAM(0, PBBAR_WIDTH));
+
+        int sleepTime = totalTime/PBBAR_WIDTH; //   On calcule le temps d'attente pour chaque palier de la PBar
+
+        SetEvent(hAdvancePBarThreadMutex);//    On signal qu'on est prêt a commencer
+        WaitForSingleObject(hRunSeqThreadMutex, 5000);//    On attend que runSeq soit prêt
+        for(int i(0); i < totalTime; i+=sleepTime)
+        {
+            Sleep(sleepTime);
+            SendMessage(hPBarSequence, PBM_DELTAPOS, 1, 0);//    On avance de 1 la PBar
+        }
+        ResetEvent(hRunSeqThreadMutex);//   On le remet a l'état non signalé
+    }
+    else
+    {
+        ///     EN FONCTION DU NBR D'ACTIONS
+        SendMessage(hPBarSequence, PBM_SETPOS, 0, 0);//    On met a zéro la pbBar
+
+        int pbStep = 100/seq->size();
+        SendMessage(hPBarSequence, PBM_SETSTEP, pbStep, 0);//  On applique les 'paliers'
+
+        SetEvent(hAdvancePBarThreadMutex);//    On signal qu'on est prêt a commencer
+        WaitForSingleObject(hRunSeqThreadMutex, 5000);//    On attend que runSeq soit prêt
+        for(int i(0); i < seq->size(); i++)///  On fait avancer la PBar
+        {
+            uint16_t sleepTime = seq->getTime(i);
+            if(sleepTime > 0)
+                Sleep(sleepTime);
+            SendMessage(hPBarSequence, PBM_STEPIT, 0, 0);//    On avance la pbBar
+        }
+        ResetEvent(hRunSeqThreadMutex);//   On le remet a l'état non signalé
+    }
+
+     #ifdef DEBUG
+        std::cout << "Advance PBar finished" << std::endl;
+    #endif // DEBUG
+}

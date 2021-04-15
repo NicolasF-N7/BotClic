@@ -1,0 +1,38 @@
+#include <windows.h>
+#include <commctrl.h>
+#include <richedit.h>
+#include "DlgResource.hpp"
+#include "Resources.hpp"
+
+
+1 RT_MANIFEST "BotClic.exeAI.Manifest"
+2 ICON "Souris.ico"
+ID_ICON_TRAY_NOTIF ICON "FileMouseBlue.ico"
+ID_ICON_DELETE_ACTION ICON "PoubelleIcone.ico"
+
+///----------------Seq Name Dialog resources--------------------
+
+LANGUAGE 0, SUBLANG_NEUTRAL
+DLG_SEQ_NAME_MAIN DIALOG 0, 0, DLG_SEQ_NAME_WIDTH, DLG_SEQ_NAME_HEIGHT
+STYLE DS_3DLOOK | DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "Ms Shell Dlg"
+
+BEGIN
+  DEFPUSHBUTTON "OK",  ID_OK, 10, DLG_SEQ_NAME_HEIGHT-20, 50,  15, WS_TABSTOP
+  PUSHBUTTON    "Cancel",  ID_CANCEL, DLG_SEQ_NAME_WIDTH-60, DLG_SEQ_NAME_HEIGHT-20, 50,  15, WS_TABSTOP
+  CTEXT         "Choisissez un nom pour votre séquence", ID_TEXT, 10, 3, DLG_SEQ_NAME_WIDTH-20, 40, 0
+  EDITTEXT      ID_EDIT, 10, DLG_SEQ_NAME_HEIGHT-40, DLG_SEQ_NAME_WIDTH-20, 15, WS_BORDER
+END
+
+/*///--------------------Launch param dlg-------------------------
+DLG_LAUNCH_PARAM_MAIN DIALOG 0, 0, DLG_LCHPRM_WIDTH, DLG_LCHPRM_HEIGHT
+STYLE DS_3DLOOK | DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP | WS_SYSMENU
+CAPTION "Launch param dialog"
+FONT 8, "Ms Shell Dlg"
+
+BEGIN
+  DEFPUSHBUTTON "OKay",  111, 10, DLG_LCHPRM_HEIGHT-20, 50,  15, WS_TABSTOP
+  PUSHBUTTON    "Second",  112, DLG_LCHPRM_WIDTH-60, DLG_LCHPRM_HEIGHT-20, 50,  15, WS_TABSTOP
+  //CHECKBOX      "Lancer avec le même temps pour chaque actions"
+END*/

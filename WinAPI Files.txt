@@ -1,0 +1,67 @@
+bool File::WinApiOpen(const char* fileName)
+{
+    /*                   Ouverture en lecture / écriture */
+    m_hFile = CreateFile(fileName, GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+    /*  Si le fichier a n'as pas pu être ouvert correctement */
+    if(m_hFile ==  INVALID_HANDLE_VALUE)
+    {
+        cerr << "Impossible d'ouvrir le fichier choisis. Fonc File::WinApiOpen()" << endl;
+        return false;
+    }
+    return true;
+}
+
+void File::WinApiRead(Sequence &sequence)
+{
+    sequence.clear();
+    //SetFilePointer(m_hFile, NULL, NULL, FILE_BEGIN);  -> change la position de lecture le fichier
+    /*  Si le fichier a été ouvert correctement */
+    if(m_hFile !=  INVALID_HANDLE_VALUE)
+    {
+        DWORD readByte;
+        char buffer;
+        char oldBuffer;
+        char storage[sizeof(unsigned int)];
+        int bytesRead(0);
+
+        int posX(0);
+        int16_t *posY(0);
+        unsigned int *command(0);
+        int16_t *time(0);
+
+        //ReadFile(m_hFile, (char*)posX, 3, &readByte, NULL);
+        ReadFile(m_hFile, (char*)&posX, sizeof(uint16_t), &readByte, NULL);
+        cout << posX << endl;
+        /*int16_t linesRead(0);
+        /*  Tant qu'on est pas a la fin du fichier on lit   */
+        /*while(readByte != 0)
+        {
+            ReadFile(m_hFile, &buffer, 1, &readByte, NULL);
+            /*  Si le caractère d'avant n'est pas un espace et celui lu oui, on a trouvé un membre d'une action */
+            /*if(oldBuffer != ' ' && buffer == ' ')
+            {
+                cout << "Casting" << endl;
+                posX = atoi(storage);
+                memset(storage, 0, sizeof(storage));
+            }
+            if(buffer == '\n')
+            {
+                //sequence.addAction(*posX, *posY, *command, *time);
+                cout << posX << endl;
+                linesRead++;
+                memset(storage, 0, sizeof(storage));
+            }
+
+            storage[bytesRead] = buffer;
+            oldBuffer = buffer;
+            bytesRead++;
+        }*/
+
+    }
+
+}
+
+void File::WinApiClose()
+{
+    CloseHandle(m_hFile);
+}

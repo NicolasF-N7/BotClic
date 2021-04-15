@@ -1,0 +1,445 @@
+# depslib dependency file v1.0
+1461262679 source:g:\programmes\win32 api\botclic\main.cpp
+	<iostream>
+	<windows.h>
+	<commctrl.h>
+	<Uxtheme.h>
+	<tchar.h>
+	"BotClic.hpp"
+	"Button.hpp"
+	"ComboBox.hpp"
+	"Command.hpp"
+	"File.hpp"
+	"Sequence.hpp"
+	"SpinBox.hpp"
+	"Layout.hpp"
+
+1455827189 source:g:\programmes\win32 api\botclic\resources.rc
+	<windows.h>
+
+1460995906 source:g:\programmes\win32 api\botclic\botclic.cpp
+	"BotClic.hpp"
+
+1460995744 g:\programmes\win32 api\botclic\botclic.hpp
+	<windows.h>
+	<commctrl.h>
+	<iostream>
+	"Command.hpp"
+	"Sequence.hpp"
+
+1460391565 g:\programmes\win32 api\botclic\command.hpp
+	<windows.h>
+	<iostream>
+	<cstring>
+	<fstream>
+
+1461144245 g:\programmes\win32 api\botclic\sequence.hpp
+	<iostream>
+	<vector>
+	<string>
+
+1461103527 source:g:\programmes\win32 api\botclic\button.cpp
+	"Button.hpp"
+
+1461103286 g:\programmes\win32 api\botclic\button.hpp
+	<windows.h>
+
+1461103527 source:g:\programmes\win32 api\botclic\combobox.cpp
+	"ComboBox.hpp"
+
+1460995498 g:\programmes\win32 api\botclic\combobox.hpp
+	<iostream>
+	<windows.h>
+	<commctrl.h>
+
+1460392416 source:g:\programmes\win32 api\botclic\command.cpp
+	"Command.hpp"
+
+1461145414 source:g:\programmes\win32 api\botclic\file.cpp
+	"File.hpp"
+
+1460397174 g:\programmes\win32 api\botclic\file.hpp
+	<iostream>
+	<windows.h>
+	<cstring>
+	<cstdio>
+	<cstdlib>
+	<fstream>
+	<string>
+	<vector>
+	"Sequence.hpp"
+
+1461144265 source:g:\programmes\win32 api\botclic\sequence.cpp
+	"Sequence.hpp"
+	<iostream>
+
+1461103527 source:g:\programmes\win32 api\botclic\spinbox.cpp
+	"SpinBox.hpp"
+
+1460995534 g:\programmes\win32 api\botclic\spinbox.hpp
+	<iostream>
+	<sstream>
+	<windows.h>
+	<commctrl.h>
+
+1455367371 source:c:\users\anne-marie\desktop\programmes\winapi\botclic\botclic.cpp
+	"BotClic.hpp"
+
+1455367366 c:\users\anne-marie\desktop\programmes\winapi\botclic\botclic.hpp
+	<windows.h>
+	<commctrl.h>
+	<iostream>
+	"Command.hpp"
+	"Sequence.hpp"
+
+1455211201 c:\users\anne-marie\desktop\programmes\winapi\botclic\command.hpp
+	<windows.h>
+	<iostream>
+	<cstring>
+
+1449946563 c:\users\anne-marie\desktop\programmes\winapi\botclic\sequence.hpp
+	<iostream>
+	<vector>
+	<string>
+
+1451169859 source:c:\users\anne-marie\desktop\programmes\winapi\botclic\button.cpp
+	"Button.hpp"
+
+1451153918 c:\users\anne-marie\desktop\programmes\winapi\botclic\button.hpp
+	<windows.h>
+
+1455368983 source:c:\users\anne-marie\desktop\programmes\winapi\botclic\combobox.cpp
+	"ComboBox.hpp"
+
+1455368159 c:\users\anne-marie\desktop\programmes\winapi\botclic\combobox.hpp
+	<iostream>
+	<windows.h>
+	<commctrl.h>
+
+1455212153 source:c:\users\anne-marie\desktop\programmes\winapi\botclic\command.cpp
+	"Command.hpp"
+
+1451145707 source:c:\users\anne-marie\desktop\programmes\winapi\botclic\file.cpp
+	"File.hpp"
+	<iostream>
+	<cstdio>
+
+1451145707 c:\users\anne-marie\desktop\programmes\winapi\botclic\file.hpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	"Sequence.hpp"
+
+1455316647 source:c:\users\anne-marie\desktop\programmes\winapi\botclic\resources.rc
+	<windows.h>
+
+1448910275 source:c:\users\anne-marie\desktop\programmes\winapi\botclic\sequence.cpp
+	"Sequence.hpp"
+	<iostream>
+
+1455367766 source:c:\users\anne-marie\desktop\programmes\winapi\botclic\spinbox.cpp
+	"SpinBox.hpp"
+
+1455367024 c:\users\anne-marie\desktop\programmes\winapi\botclic\spinbox.hpp
+	<iostream>
+	<sstream>
+	<windows.h>
+	<commctrl.h>
+
+1455369070 source:c:\users\anne-marie\desktop\programmes\winapi\botclic\main.cpp
+	<tchar.h>
+	<windows.h>
+	<commctrl.h>
+	<Uxtheme.h>
+	"BotClic.hpp"
+	"Button.hpp"
+	"ComboBox.hpp"
+	"Command.hpp"
+	"File.hpp"
+	"Sequence.hpp"
+	"SpinBox.hpp"
+
+1455213520 c:\users\anne-marie\desktop\programmes\winapi\botclic\main.cpp
+	<tchar.h>
+	<windows.h>
+	<commctrl.h>
+	<Uxtheme.h>
+	"BotClic.hpp"
+	"Button.hpp"
+	"ComboBox.hpp"
+	"Command.hpp"
+	"File.hpp"
+	"Sequence.hpp"
+	"SpinBox.hpp"
+
+1467024786 source:c:\program files\programmes\winapi\botclic\botclic.cpp
+	"BotClic.hpp"
+
+1467024779 c:\program files\programmes\winapi\botclic\botclic.hpp
+	<windows.h>
+	<commctrl.h>
+	<iostream>
+	"Command.hpp"
+	"Sequence.hpp"
+	"Layout.hpp"
+
+1470509566 c:\program files\programmes\winapi\botclic\command.hpp
+	<windows.h>
+	<iostream>
+	<cstring>
+	<fstream>
+	"textRc.hpp"
+
+1467299211 c:\program files\programmes\winapi\botclic\sequence.hpp
+	<iostream>
+	<vector>
+	<string>
+
+1471103243 source:c:\program files\programmes\winapi\botclic\button.cpp
+	"Button.hpp"
+
+1471103243 c:\program files\programmes\winapi\botclic\button.hpp
+	<windows.h>
+
+1466619958 source:c:\program files\programmes\winapi\botclic\combobox.cpp
+	"ComboBox.hpp"
+
+1466619822 c:\program files\programmes\winapi\botclic\combobox.hpp
+	<iostream>
+	<windows.h>
+	<commctrl.h>
+
+1470587688 source:c:\program files\programmes\winapi\botclic\command.cpp
+	"Command.hpp"
+
+1470068646 source:c:\program files\programmes\winapi\botclic\file.cpp
+	"File.hpp"
+
+1461966166 c:\program files\programmes\winapi\botclic\file.hpp
+	<iostream>
+	<windows.h>
+	<cstring>
+	<cstdio>
+	<cstdlib>
+	<fstream>
+	<string>
+	<vector>
+	"Sequence.hpp"
+
+1471279816 source:c:\program files\programmes\winapi\botclic\main.cpp
+	<iostream>
+	<string>
+	<windows.h>
+	<commctrl.h>
+	<Uxtheme.h>
+	<tchar.h>
+	<accctrl.h>
+	<Aclapi.h>
+	<sddl2.h>
+	"BotClic.hpp"
+	"Button.hpp"
+	"ComboBox.hpp"
+	"Command.hpp"
+	"File.hpp"
+	"Sequence.hpp"
+	"SpinBox.hpp"
+	"Layout.hpp"
+	"textRc.hpp"
+	"DlgResource.hpp"
+	"dlgMain.cpp"
+	"Resources.hpp"
+
+1471278362 c:\program files\programmes\winapi\botclic\spinbox.hpp
+	<iostream>
+	<sstream>
+	<windows.h>
+	<commctrl.h>
+
+1471105263 source:c:\program files\programmes\winapi\botclic\resources.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"DlgResource.hpp"
+	"Resources.hpp"
+
+1467299219 source:c:\program files\programmes\winapi\botclic\sequence.cpp
+	"Sequence.hpp"
+	<iostream>
+
+1471278362 source:c:\program files\programmes\winapi\botclic\spinbox.cpp
+	"SpinBox.hpp"
+
+1471105116 c:\program files\programmes\winapi\botclic\layout.hpp
+
+1458433877 c:\program files\programmes\winapi\botclic\savefile.hpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	"Sequence.hpp"
+
+1458433957 source:c:\program files\programmes\winapi\botclic\savefile.cpp
+	"saveFile.hpp"
+	<iostream>
+	<cstdio>
+
+1461262770 g:\programmes\win32 api\botclic\layout.hpp
+
+1461442506 source:c:\program files\programmes\winapi\botclic\dlgresource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"DlgResource.hpp"
+
+1466715807 c:\program files\programmes\winapi\botclic\dlgresource.hpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+
+1461444607 source:c:\program files\programmes\winapi\botclic\dlgmain.cpp
+	<iostream>
+	"DlgResource.hpp"
+
+1461446069 c:\program files\programmes\winapi\botclic\dlgmain.cpp
+	<iostream>
+	"DlgResource.hpp"
+
+1470588239 c:\program files\programmes\winapi\botclic\textrc.hpp
+
+1471103548 c:\program files\programmes\winapi\botclic\resources.hpp
+
+1467024786 source:c:\program files\programmes\winapi\botclic save\botclic.cpp
+	"BotClic.hpp"
+
+1467024779 c:\program files\programmes\winapi\botclic save\botclic.hpp
+	<windows.h>
+	<commctrl.h>
+	<iostream>
+	"Command.hpp"
+	"Sequence.hpp"
+	"Layout.hpp"
+
+1467542077 c:\program files\programmes\winapi\botclic save\command.hpp
+	<windows.h>
+	<iostream>
+	<cstring>
+	<fstream>
+	"textRc.hpp"
+
+1467299211 c:\program files\programmes\winapi\botclic save\sequence.hpp
+	<iostream>
+	<vector>
+	<string>
+
+1466715486 c:\program files\programmes\winapi\botclic save\layout.hpp
+
+1466618065 source:c:\program files\programmes\winapi\botclic save\button.cpp
+	"Button.hpp"
+
+1466618059 c:\program files\programmes\winapi\botclic save\button.hpp
+	<windows.h>
+
+1466619958 source:c:\program files\programmes\winapi\botclic save\combobox.cpp
+	"ComboBox.hpp"
+
+1466619822 c:\program files\programmes\winapi\botclic save\combobox.hpp
+	<iostream>
+	<windows.h>
+	<commctrl.h>
+
+1467557026 source:c:\program files\programmes\winapi\botclic save\command.cpp
+	"Command.hpp"
+
+1467299426 source:c:\program files\programmes\winapi\botclic save\file.cpp
+	"File.hpp"
+
+1461966166 c:\program files\programmes\winapi\botclic save\file.hpp
+	<iostream>
+	<windows.h>
+	<cstring>
+	<cstdio>
+	<cstdlib>
+	<fstream>
+	<string>
+	<vector>
+	"Sequence.hpp"
+
+1467659064 source:c:\program files\programmes\winapi\botclic save\main.cpp
+	<iostream>
+	<string>
+	<windows.h>
+	<commctrl.h>
+	<Uxtheme.h>
+	<tchar.h>
+	<accctrl.h>
+	<Aclapi.h>
+	<sddl2.h>
+	"BotClic.hpp"
+	"Button.hpp"
+	"ComboBox.hpp"
+	"Command.hpp"
+	"File.hpp"
+	"Sequence.hpp"
+	"SpinBox.hpp"
+	"Layout.hpp"
+	"textRc.hpp"
+	"DlgResource.hpp"
+	"dlgMain.cpp"
+	"DlgLaunchParam.cpp"
+	"Resources.hpp"
+
+1466619786 c:\program files\programmes\winapi\botclic save\spinbox.hpp
+	<iostream>
+	<sstream>
+	<windows.h>
+	<commctrl.h>
+
+1467546009 c:\program files\programmes\winapi\botclic save\textrc.hpp
+
+1466715807 c:\program files\programmes\winapi\botclic save\dlgresource.hpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+
+1461446069 c:\program files\programmes\winapi\botclic save\dlgmain.cpp
+	<iostream>
+	"DlgResource.hpp"
+
+1465753958 c:\program files\programmes\winapi\botclic save\resources.hpp
+
+1467411319 source:c:\program files\programmes\winapi\botclic save\resources.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"DlgResource.hpp"
+	"Resources.hpp"
+
+1467299219 source:c:\program files\programmes\winapi\botclic save\sequence.cpp
+	"Sequence.hpp"
+	<iostream>
+
+1466619816 source:c:\program files\programmes\winapi\botclic save\spinbox.cpp
+	"SpinBox.hpp"
+
+1465754474 source:c:\program files\programmes\winapi\botclic save\dlglaunchparam.cpp
+	"DlgResource.hpp"
+
+1465752399 c:\program files\programmes\winapi\botclic save\dlglaunchparamres.hpp
+	<iostream>
+	<windows.h>
+	<commctrl.h>
+
+1465938360 c:\program files\programmes\winapi\botclic save\dlglaunchparam.cpp
+	"DlgResource.hpp"
+
+1465754288 c:\program files\programmes\winapi\botclic save\launchparamstruct.hpp
+
+1465940185 source:c:\program files\programmes\winapi\botclic save\launchparamdlg.rc
+	<richedit.h>
+	"DlgResource.hpp"
+	"Resources.hpp"
+
+1465938360 c:\program files\programmes\winapi\botclic\dlglaunchparam.cpp
+	"DlgResource.hpp"
+
