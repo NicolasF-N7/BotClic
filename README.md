@@ -3,4 +3,4 @@ A software where you can create mouse and keyboard action sequence, and replay t
 
 #Installing BotClic
 Download and launch the file "BotClic Setup.exe" on your computer. This only works on Windows.
-You will have to go through the installation process, and then you will be able to run it !
+You will have to go through the installation process, and then you will be able to run BotClic !
